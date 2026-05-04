@@ -1,0 +1,178 @@
+:root {
+    --neon-orange: #ff5f00;
+    --pagani-purple: #4c1d95;
+    --deep-space: #0b0e14; /* Better than pure black for depth */
+    --glass-border: rgba(255, 95, 0, 0.2);
+}
+
+body {
+    width: 500px;
+    margin: 0;
+    background-color: var(--deep-space);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* Pagani Aura - Edge Glow */
+.aura-glow {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    box-shadow: inset 0 0 100px var(--pagani-purple);
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.popup-container {
+    padding: 24px;
+    background: rgba(11, 14, 20, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+/* Fixed Header Pods */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.neon-title {
+    color: var(--neon-orange);
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 95, 0, 0.3);
+}
+
+.settings-pod {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 6px 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.settings-text {
+    font-size: 10px;
+    font-weight: 800;
+    margin-right: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    color: var(--deep-space);
+}
+
+#settingsBtn {
+    background: none; border: none;
+    color: var(--neon-orange);
+    font-size: 16px;
+    padding: 0;
+    transition: transform 0.6s ease;
+}
+
+.settings-pod:hover {
+    background: var(--neon-orange);
+    border-color: var(--neon-orange);
+}
+
+.settings-pod:hover .settings-text {
+    max-width: 50px;
+    margin-right: 8px;
+}
+
+.settings-pod:hover #settingsBtn {
+    transform: rotate(180deg);
+    color: var(--deep-space);
+}
+
+/* Primary Ignition Button */
+.ignition-btn {
+    width: 100%;
+    padding: 18px;
+    background: var(--neon-orange);
+    color: var(--deep-space);
+    border: none;
+    border-radius: 4px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ignition-btn:hover {
+    background: var(--deep-space);
+    color: var(--neon-orange);
+    box-shadow: 0 0 25px var(--neon-orange);
+    outline: 1px solid var(--neon-orange);
+}
+
+/* Expanding Dashboard */
+.dashboard-expansion {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.show-content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 24px;
+}
+
+textarea {
+    width: 100%;
+    height: 240px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    color: #e2e8f0;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.6;
+    resize: none;
+    box-sizing: border-box;
+}
+
+/* Cockpit Control Buttons */
+.control-panel { display: flex; gap: 12px; margin-top: 20px; }
+
+.nav-btn {
+    flex: 1;
+    background: #1a1b1e;
+    color: var(--neon-orange);
+    border: 1px solid var(--glass-border);
+    padding: 12px;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.nav-btn:hover {
+    background: var(--neon-orange);
+    color: var(--deep-space);
+    box-shadow: 0 0 15px var(--pagani-purple);
+}
+
+.telemetry {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 15px;
+}
+
+#tokenDisplay {
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuration | AI Cold Email</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="aura-bg"></div>
+    <div class="config-console">
+        <h1 class="neon-header">SYSTEM CONFIGURATION</h1>
+        
+        <div class="input-group">
+            <label for="apiKey">GEMINI API KEY</label>
+            <input type="password" id="apiKey" placeholder="Enter your key here...">
+        </div>
+
+        <div class="input-group">
+            <label for="resumeText">PRIMARY RESUME DATA</label>
+            <textarea id="resumeText" placeholder="Paste the full text of your resume here..."></textarea>
+        </div>
+
+        <button id="saveBtn" class="ignition-btn">SAVE & INITIALIZE PROFILE</button>
+        
+        <p id="status" class="telemetry-text">System Standby</p>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

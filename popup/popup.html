@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Email Gen</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="aura-glow"></div>
+    <div class="popup-container">
+        <div class="top-bar">
+            <h2 class="neon-title">AI COLD EMAIL</h2>
+            <div id="settingsWrapper" class="settings-pod">
+                <span class="settings-text">SETUP</span>
+                <button id="settingsBtn">&#9881;</button>
+            </div>
+        </div>
+        
+        <div class="launch-zone">
+            <button id="generateBtn" class="ignition-btn">GENERATE MAIL</button>
+        </div>
+
+        <div id="resultArea" class="dashboard-expansion">
+            <textarea id="emailResult" spellcheck="false" placeholder="Engine standby..."></textarea>
+            
+            <div class="control-panel">
+                <button id="copyBtn" class="nav-btn">COPY</button>
+                <button id="regenBtn" class="nav-btn">REDO</button>
+                <button id="gmailBtn" class="nav-btn">GMAIL</button>
+            </div>
+        </div>
+
+        <div class="telemetry">
+            <p id="tokenDisplay">SYSTEM READY</p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
