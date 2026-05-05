@@ -28,3 +28,16 @@ An intelligent Chrome extension designed to streamline the job application proce
 
 ## 🛡️ Privacy & Security
 All sensitive data, including your API Key and Resume text, is stored locally within the browser's `chrome.storage.local`. No personal data is transmitted to external servers other than the official Google Gemini API endpoint for text generation.
+
+## 🌐 Supported Platforms
+Currently, the extension is optimized to extract job descriptions from the following platforms:
+*   **LinkedIn**: Individual job posting pages.
+*   **Indeed**: Full job description views.
+
+## 🔑 Getting Your Gemini API Key
+To use this extension, you need a free API key from Google:
+1.  Visit the [Google AI Studio](https://aistudio.google.com/).
+2.  Sign in with your Google account.
+3.  Click on **"Get API key"** in the sidebar.
+4.  Click **"Create API key in new project"**.
+5.  Copy your key and paste it into the Extension's **Configuration** page.
